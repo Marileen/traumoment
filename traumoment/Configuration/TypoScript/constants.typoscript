@@ -1,0 +1,60 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:traumoment/Resources/Public/Images/logo-traumoment.jpeg
+        fileInverted = EXT:traumoment/Resources/Public/Images/logo-traumoment.jpeg
+        height = 353
+        width = 200
+        alt = Traumoment
+        linktitle = Traumoment
+    }
+    favicon {
+        file = EXT:traumoment/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:traumoment/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:traumoment/Resources/Private/Partials/Page/
+        templateRootPath = EXT:traumoment/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:traumoment/Resources/Private/Layouts/
+        partialRootPath = EXT:traumoment/Resources/Private/Partials/
+        templateRootPath = EXT:traumoment/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:traumoment/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:traumoment/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:traumoment/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
+}
