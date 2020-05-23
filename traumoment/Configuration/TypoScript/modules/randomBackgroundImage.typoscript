@@ -1,0 +1,21 @@
+##
+# Takes image from Page, which are set in
+# Resources > Media
+# it will be set randomized as background image on the css class .random-bg
+# USE the css class .random-bg everywhere on an page element to have a bg
+# Image of current Page is taken or if it's not set it will take the image on the next parent page that has an image
+##
+
+lib.bgImage = IMG_RESOURCE
+lib.bgImage {
+    file {
+        import.data = levelmedia:-1, slide
+        treatIdAsReference = 1
+        import.listNum = rand
+    }
+}
+
+page {
+    headerData.8340 < lib.bgImage
+    headerData.8340.stdWrap.wrap = <style>.random-bg {background: url(|) center center no-repeat; background-size:cover }</style>
+}
