@@ -9,10 +9,10 @@
 ############
 page {
     logo {
-        file = EXT:traumoment/Resources/Public/Images/logo-traumoment.jpeg
-        fileInverted = EXT:traumoment/Resources/Public/Images/logo-traumoment.jpeg
-        height = 353
-        width = 200
+        file = EXT:traumoment/Resources/Public/Images/TrauMoment.svg
+        fileInverted = EXT:traumoment/Resources/Public/Images/Traumoment.svg
+        height = 350
+        width = 350
         alt = Traumoment
         linktitle = Traumoment
     }
@@ -55,6 +55,6 @@ plugin.bootstrap_package_contentelements {
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
 plugin.bootstrap_package.settings.scss {
-    primary = #eb3e4a
-    secondary = #013859
+    primary = #dc9457
+    secondary = #e6ae7f
 }
