@@ -3,4 +3,13 @@
 #
 TCEMAIN {
 
+    permissions.userid = 3
+    permissions.groupid = 1
+
+    permissions {
+        user = show, edit, delete, new, editcontent
+        group = show, edit, new, editcontent
+        everybody = show
+    }
+
 }
