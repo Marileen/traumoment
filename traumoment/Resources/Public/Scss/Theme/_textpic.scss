@@ -55,7 +55,18 @@
             margin-bottom: 0;
             width: 50%;
         }
+
+        .textpic-text {
+            width:30%;
+        }
     }
+
+    .textpic-right {
+        .textpic-text {
+            margin-left: 10%;
+        }
+    }
+
     .textmedia-right,
     .textpic-right {
         .textmedia-gallery,

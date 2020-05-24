@@ -1,0 +1,28 @@
+div[data-module="textpic"] {
+
+  figure {
+    display: inline-block;
+  }
+
+  .element-subheader {
+    text-transform: uppercase;
+  }
+
+  &.textpic-left {
+    .gallery-item {
+      text-align: right;
+    }
+
+    .element-subheader[data-module="header-textpic"] {
+      text-align: center;
+    }
+  }
+
+  &.textpic-right {}
+
+  .gallery-item {
+    picture {
+      width: auto;
+    }
+  }
+}
