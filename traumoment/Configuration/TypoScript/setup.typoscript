@@ -30,20 +30,33 @@ page {
         traumoment_scripts = EXT:traumoment/Resources/Public/JavaScript/Dist/scripts.js
     }
 
-#    10.variables {
-#        backendLayout = CASE
-#        backendLayout {
-#            key.data = pagelayout
-#
-#            pagets__HeroContent = TEXT
-#            pagets__HeroContent.value = heroContent
-#
-#            #pagets__anderesBElayout = TEXT
-#            #pagets__anderesBElayout.value = anderesBElayout
-#
-#            default < .pagets__HeroContent
-#        }
-#    }
+    ## This is not needed because
+    ## The smart configuration of bootstrap package takes the selected Backend Layout string
+    ## from the pagelayout function, removes the prepended pagets__, then sets the first character
+    ## of the remaining string to upper case and uses this as the template name. With this configuration
+    ## new Backend Layouts and matching fluid templates can be added to a system without adding anything
+    ## to the TypoScript configuration.
+    #    10 = FLUIDTEMPLATE
+    #    10 {
+    #        templateName = TEXT
+    #        templateName.stdWrap.cObject = CASE
+    #        templateName.stdWrap.cObject {
+    #            key.data = pagelayout
+    #
+    #            pagets__default = TEXT
+    #            pagets__default.value = Default
+    #
+    #            pagets__tm_hero_content = TEXT
+    #            pagets__tm_hero_content.value = Herocontent
+    #
+    #            #pagets__anderesBElayout = TEXT
+    #            #pagets__anderesBElayout.value = anderesBElayout
+    #
+    #            default = TEXT
+    #            default.value = Default
+    #        }
+    #    }
+
 }
 
-#page.config.contentObjectExceptionHandler = 0
+page.config.contentObjectExceptionHandler = 0
