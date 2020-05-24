@@ -23,25 +23,13 @@ mod.web_layout.BackendLayouts {
                     2 {
                         columns {
                             1 {
-                                name = Left
-                                colPos = 20
-                            }
-                            2 {
-                                name = Right
-                                colPos = 30
-                            }
-                        }
-                    }
-                    3 {
-                        columns {
-                            1 {
                                 name = Text mit Trenner und Aufzählung
                                 colspan = 2
                                 colPos = 50
                             }
                         }
                     }
-                    4 {
+                    3 {
                         columns {
                             1 {
                                 name = Content

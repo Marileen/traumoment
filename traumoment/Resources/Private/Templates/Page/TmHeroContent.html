@@ -5,20 +5,12 @@
 </f:section>
 
 <f:section name="HeroContent">
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '10'}" />
+    <div data-module="hero-content">
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '10'}" />
+    </div>
 </f:section>
 
 <f:section name="Main">
-    <div class="container frame-container">
-        <div class="row">
-            <div class="col-md-6 tm-border-right">
-                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '20'}" />
-            </div>
-            <div class="col-md-6">
-                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '30'}" />
-            </div>
-        </div>
-    </div>
 
     <div data-module="text-image-ordered">
         <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '50'}" />
