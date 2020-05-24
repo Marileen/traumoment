@@ -1,0 +1,57 @@
+mod.web_layout.BackendLayouts {
+    tm_hero_content {
+        title = Hero+Content
+        icon = EXT:traumoment/Resources/Public/Icons/BackendLayouts/hero+content.png
+
+
+
+
+        config {
+            backend_layout {
+                colCount = 2
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Hero
+                                colspan = 2
+                                colPos = 10
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Left
+                                colPos = 20
+                            }
+                            2 {
+                                name = Right
+                                colPos = 30
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Text mit Trenner und Aufzählung
+                                colspan = 2
+                                colPos = 50
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Content
+                                colspan = 2
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
