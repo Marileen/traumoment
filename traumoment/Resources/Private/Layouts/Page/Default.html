@@ -21,15 +21,19 @@
         <!--TYPO3SEARCH_end-->
     </div>
 
-    <f:comment>
-<!--        THIS IS HIDDEN FOR NOW-->
+
     <footer id="page-footer" class="bp-page-footer">
-        <f:render partial="DropIn/Structure/FooterBefore" arguments="{_all}" />
-        <f:render section="Footer" optional="true" />
-        <f:render partial="Structure/FooterMeta" arguments="{_all}" />
-        <f:render partial="DropIn/Structure/FooterAfter" arguments="{_all}" />
+        <f:render partial="Structure/FooterMeta"></f:render>
+
+        <f:comment>
+            <!--        THIS IS HIDDEN FOR NOW-->
+            <f:render partial="DropIn/Structure/FooterBefore" arguments="{_all}" />
+            <f:render section="Footer" optional="true" />
+            <f:render partial="Structure/FooterMeta" arguments="{_all}" />
+            <f:render partial="DropIn/Structure/FooterAfter" arguments="{_all}" />
+        </f:comment>
     </footer>
-    </f:comment>
+
 
     <f:render partial="Structure/ScrollTop" arguments="{_all}" />
 

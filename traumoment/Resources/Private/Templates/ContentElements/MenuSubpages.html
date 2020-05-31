@@ -4,7 +4,13 @@
 
     <f:if condition="{menu}">
         <f:render partial="Menu/SkipNavigation" arguments="{_all}" />
-        <ul>
+        <f:comment>
+            #
+            # This part renders a menu, when menu "Unterseiten" ist selected in the backend as Content Element
+            # It overwrites the bootstrap and the fluid template MenuSubpages.html
+            #
+        </f:comment>
+        <ul data-module="teaser-subpages">
             <f:for each="{menu}" as="page">
 <!--                &ndash;&gt;testmst457-->
                 <li>
