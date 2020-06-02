@@ -8,6 +8,8 @@
 ### PAGE ###
 ############
 page {
+    //to avoid loading screen and showing the bootstrap package logo
+    preloader.enable = 0
     logo {
         file = EXT:traumoment/Resources/Public/Images/TrauMoment.svg
         fileInverted = EXT:traumoment/Resources/Public/Images/Traumoment.svg
