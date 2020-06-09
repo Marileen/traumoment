@@ -9,8 +9,8 @@ div[data-module="textpic"] {
   }
 
   &.textpic-left {
-    .gallery-item {
-      text-align: right;
+    .gallery-row {
+      justify-content: center;
     }
 
     .element-subheader[data-module="header-textpic"] {

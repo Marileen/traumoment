@@ -1,11 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{files}">
 
-    <f:variable name="imagecols">1</f:variable>
-    <f:if condition="{files -> f:count()} > 1">
-        <f:variable name="imagecols">{data.imagecols as integer}</f:variable>
-    </f:if>
+    <f:comment> DO NOT USE THIS BECAUSE IF THERE IS JUST 1 IMAGE, THE {data.imagecols} WOULD NOT BE APPLIED
+        <f:variable name="imagecols">1</f:variable>
+        <f:if condition="{files -> f:count()} > 1">
+            <f:variable name="imagecols">{data.imagecols as integer}</f:variable>
+        </f:if>
+    </f:comment>
+
+    <f:variable name="imagecols">{data.imagecols}</f:variable>
     <f:variable name="columnConfig">{settings.gallery.columns.{imagecols}}</f:variable>
+
     <bk2k:data.imageVariants as="variants" variants="{variants}" multiplier="{columnConfig.multiplier}" gutters="{columnConfig.gutters}" corrections="{columnConfig.corrections}" />
 
     <div class="gallery-row">

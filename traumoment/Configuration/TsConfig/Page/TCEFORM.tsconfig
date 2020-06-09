@@ -2,19 +2,76 @@
 # TCEFORM
 #
 TCEFORM {
+
+    #
+    # pages
+    #
     pages {
 
     }
-    #tt_content reflects the content database table
+
+    #
+    # tt_content reflects the content database table
+    #
     tt_content {
         #header_position.disabled = 1
         date.disabled = 1
         #header_layout.removeItems = 4,5,6
         #header_layout.addItems = Hello
+
+        header {
+            label.default = Headline for image column
+            label.de = Überschrift über dem Bild (optional)
+        }
+
+        subheader {
+            label.default = Headline for text column
+            label.de = Überschrift über dem Text (optional)
+        }
+
+        // Bootstrap Package disabled the image dimensions
+        // but i overwrite it to use it for svg images
+        imageheight.disabled = 0
+        imagewidth.disabled = 0
+
+        // overwirite to use it for fullwidth and manually-width images
+        imagecols.label = Breite des Bildes
+        imagecols.removeItems = 3,4,5,6,7,8
+        imagecols.altLabels.1 = volle Breite
+        imagecols.altLabels.2 = Benutzerdefiniert
+
+        imageorient {
+            label.default = WICHTIG: Hier wählen ob Bild links oder rechts
+            label.de = WICHTIG: Hier wählen ob Bild links oder rechts
+
+            #25 und 26 behalten, alles andere erstmal nicht
+            removeItems = 0,1,2,3,4,8,9,10,17,18,125,126
+            types {
+                image {
+                    disabled = 1
+                }
+                media {
+                    disabled = 1
+                }
+            }
+        }
     }
+
+    #
+    #
+    #
+#    sys_file_reference {
+#        crop.config.cropVariants {
+#
+#        }
+#    }
 }
 
 #
 # TCA Defaults
 #
 TCAdefaults.tt_content.frame_class = none
+
+# force "benutzerdefinierte Breite" as standard for images
+# TCAdefaults.tt_content.imagecols = 2 //doch nicht...
+# TCAdefaults.tt_content.imageorient = 3

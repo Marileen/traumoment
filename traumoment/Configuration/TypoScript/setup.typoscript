@@ -30,6 +30,11 @@ page {
         traumoment_scripts = EXT:traumoment/Resources/Public/JavaScript/Dist/scripts.js
     }
 
+    ## overwrite rootline for breadcrumb:
+    10.dataProcessing.30 {
+        special.range = 1|-1
+    }
+
     ## This is not needed because
     ## The smart configuration of bootstrap package takes the selected Backend Layout string
     ## from the pagelayout function, removes the prepended pagets__, then sets the first character

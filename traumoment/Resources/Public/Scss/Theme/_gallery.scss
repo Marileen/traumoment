@@ -15,7 +15,7 @@
     padding-right: .5rem;
     img,
     picture {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 }
@@ -23,36 +23,39 @@
 //
 // Gallery Item Sizes
 //
-.gallery-item-size-1 {
+.gallery-item-size-1,
+.gallery-item-size-1 img {
     width: 100%;
 }
-.gallery-item-size-2 {
-    width: calc(100% / 2);
-}
-.gallery-item-size-3 {
-    width: calc(100% / 3);
-}
-.gallery-item-size-4 {
-    width: calc(100% / 2);
-    @include media-breakpoint-up('sm') {
-        width: calc(100% / 4);
-    }
-}
-.gallery-item-size-5 {
-    width: calc(100% / 2);
-    @include media-breakpoint-up('sm') {
-        width: calc(100% / 3);
-    }
-    @include media-breakpoint-up('md') {
-        width: calc(100% / 5);
-    }
-}
-.gallery-item-size-6 {
-    width: calc(100% / 2);
-    @include media-breakpoint-up('sm') {
-        width: calc(100% / 3);
-    }
-    @include media-breakpoint-up('md') {
-        width: calc(100% / 6);
-    }
-}
+
+// not needed because imagecols are removed in TCEFORM
+//.gallery-item-size-2 {
+//    width: calc(100% / 2);
+//}
+//.gallery-item-size-3 {
+//    width: calc(100% / 3);
+//}
+//.gallery-item-size-4 {
+//    width: calc(100% / 2);
+//    @include media-breakpoint-up('sm') {
+//        width: calc(100% / 4);
+//    }
+//}
+//.gallery-item-size-5 {
+//    width: calc(100% / 2);
+//    @include media-breakpoint-up('sm') {
+//        width: calc(100% / 3);
+//    }
+//    @include media-breakpoint-up('md') {
+//        width: calc(100% / 5);
+//    }
+//}
+//.gallery-item-size-6 {
+//    width: calc(100% / 2);
+//    @include media-breakpoint-up('sm') {
+//        width: calc(100% / 3);
+//    }
+//    @include media-breakpoint-up('md') {
+//        width: calc(100% / 6);
+//    }
+//}
