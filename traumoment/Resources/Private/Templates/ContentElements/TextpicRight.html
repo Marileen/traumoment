@@ -5,14 +5,14 @@
 
     <f:variable name="imageConfig">{settings.responsiveimages.contentelements.textpic.right}</f:variable>
     <bk2k:data.imageVariants as="variants" variants="{variants}" multiplier="{imageConfig.multiplier}" gutters="{imageConfig.gutters}" corrections="{imageConfig.corrections}" />
-    <div class="textpic textpic-right" data-module="textpic">
-        <div class="textpic-item textpic-gallery">
+    <div class="textpic textpic-right row justify-content-md-center" data-module="textpic">
+        <div class="textpic-item textpic-gallery col-md-4">
             <h3 class="class=element-subheader" data-module="header-textpic">
                 {data.header}
             </h3>
             <f:render partial="Media/Gallery" arguments="{_all}" />
         </div>
-        <div class="textpic-item textpic-text tm-border-right">
+        <div class="textpic-item textpic-text tm-border-right col-md-6">
             <f:render partial="Header/Textpic" arguments="{_all}" />
             <f:format.html>{data.bodytext}</f:format.html>
         </div>
