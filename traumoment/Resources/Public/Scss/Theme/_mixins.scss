@@ -1,0 +1,8 @@
+@mixin orange-border($position) {
+  @if $position == 'top' {
+    border-top: 3px solid $primary;
+  } @else {
+    border-bottom: 3px solid $primary;
+  }
+}
+

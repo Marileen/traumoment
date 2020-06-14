@@ -287,7 +287,7 @@
 // Mainnavigation
 //
 .navbar-mainnavigation {
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .15);
+    @include orange-border('bottom');
     padding: 0;
     .navbar-nav:last-child {
         margin-left: auto;
@@ -321,6 +321,9 @@
             display: block;
             margin: 0;
         }
+    }
+    .dropdown-item {
+        text-transform: uppercase;
     }
 }
 

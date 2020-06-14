@@ -1,3 +1,8 @@
+
+#page-footer {
+    @include orange-border('top');
+}
+
 //
 // Footer Columns
 //
@@ -35,6 +40,10 @@
 // Footer Section Meta
 //
 .footer-section-meta {
+
+    color: $gray-600;
+    background-color: $white;
+
     @include media-breakpoint-up('sm') {
         text-align: center;
     }

@@ -1,5 +1,6 @@
 lib.metanav = HMENU
 lib.metanav {
+    entryLevel = 0
     wrap = <ul id="meta_menu" class="meta-menu">|</ul>
     special = directory
     # ID vom directory
@@ -9,12 +10,23 @@ lib.metanav {
     1 {
         NO = 1
         NO {
-            allWrap = <li>|</li>
+            allWrap = <li class="xx">|</li>
             stdWrap.htmlSpecialChars = 1
             ATagTitle.field = description // subtitle // title
         }
 
-        CUR < .NO
-        CUR.allWrap = <li><strong>|</strong></li>
+        #CUR < .NO
+        CUR = 1
+        #CUR.ATagParams = class="active"
+        CUR {
+            wrapItemAndSub = <li class="active">|</li>
+        }
+
+        #ACT < .NO
+        ACT = 1
+        #ACT.ATagParams = class="active"
+        ACT {
+            wrapItemAndSub = <li class="active">|</li>
+        }
     }
 }
