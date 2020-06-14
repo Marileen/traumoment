@@ -26,6 +26,21 @@ page {
         partialRootPath = EXT:traumoment/Resources/Private/Partials/Page/
         templateRootPath = EXT:traumoment/Resources/Private/Templates/Page/
     }
+
+    theme {
+        googleFont {
+            # cat=bootstrap package: google font/161/1_enable; type=boolean; label=Enable
+            enable = 1
+            # cat=bootstrap package: google font/161/2_font; type=options[Lora=Lora, Merriweather=Merriweather, Nunito=Nunito, Raleway=Raleway, Roboto=Roboto, Source Sans Pro=Source Sans Pro, Quattrocento=Quattrocento, Ubuntu=Ubuntu]; label=Font
+            //font = Yanone Kaffeesatz
+            url = https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;500|Great+Vibes
+            realFontUrl = https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;500&family=Great+Vibes
+            #|Noto+Sans+TC:400,500|Roboto:400,500
+            # cat=bootstrap package: google font/161/3_weight; type=string; label=Font Weights: Comma separated list of font weights
+            //weight = 200,300,400,500
+        }
+
+    }
 }
 
 
@@ -57,6 +72,13 @@ plugin.bootstrap_package_contentelements {
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
 plugin.bootstrap_package.settings.scss {
-    primary = #dc9457
-    secondary = #e6ae7f
+    primary = #F5A376
+    secondary = #F5A376
+
+    font-size-base = 18px
+
+    font-weight-light = 200
+    font-weight-normal = 300
+    font-weight-bold = 500
+    headings-font-weight = 500
 }
