@@ -6,7 +6,10 @@ blockquote {
     padding: 1.25rem 1.5rem;
     border-left: 4px solid rgba(0, 0, 0, .125);
     margin-bottom: $spacer;
-    font-size: $blockquote-font-size;
+    font-size: 40px;
+    color: $primary;
+    font-family: 'Great Vibes';
+    text-align: justify;
     > *:last-child {
         margin-bottom: 0;
     }
