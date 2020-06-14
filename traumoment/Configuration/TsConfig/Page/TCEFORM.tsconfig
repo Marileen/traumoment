@@ -70,7 +70,7 @@ TCEFORM {
 #
 # TCA Defaults
 #
-TCAdefaults.tt_content.frame_class = none
+#TCAdefaults.tt_content.frame_class = none
 
 # force "benutzerdefinierte Breite" as standard for images
 # TCAdefaults.tt_content.imagecols = 2 //doch nicht...
