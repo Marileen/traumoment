@@ -67,3 +67,23 @@
         margin-left: .5em;
     }
 }
+
+.dropdown-submenu {
+
+    &:after {
+        content: ">";  //todo add font-awesome icon-font
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    ul {
+        left: 100%;
+        top:0;
+    }
+
+    li:first-child {
+        border-left: none;
+    }
+
+}

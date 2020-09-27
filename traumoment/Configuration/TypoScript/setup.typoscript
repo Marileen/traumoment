@@ -30,9 +30,15 @@ page {
         traumoment_scripts = EXT:traumoment/Resources/Public/JavaScript/Dist/scripts.js
     }
 
-    ## overwrite rootline for breadcrumb:
+    ## overwrite rootline for breadcrumb: Start-Ebene | letzte Ebene
     10.dataProcessing.30 {
         special.range = 1|-1
+    }
+
+    ## 2 menu levels are default, and template Page/Navigation/Main.html does not support more than 2
+    ## so i added some more in that template
+    10.dataProcessing.10.{
+        levels=4
     }
 
     ## This is not needed because
@@ -65,3 +71,5 @@ page {
 }
 
 page.config.contentObjectExceptionHandler = 0
+
+#config.admPanel = 1

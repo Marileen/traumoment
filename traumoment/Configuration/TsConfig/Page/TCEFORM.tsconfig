@@ -21,12 +21,12 @@ TCEFORM {
 
         header {
             label.default = Headline for image column
-            label.de = Überschrift über dem Bild (optional)
+            label.de = Überschrift (wird bei Text & Bilder über dem BILD angezeigt)
         }
 
         subheader {
             label.default = Headline for text column
-            label.de = Überschrift über dem Text (optional)
+            label.de = Überschrift (wird bei Text & Bilder über dem TEXT angezeigt)
         }
 
         // Bootstrap Package disabled the image dimensions
@@ -34,7 +34,7 @@ TCEFORM {
         imageheight.disabled = 0
         imagewidth.disabled = 0
 
-        // overwirite to use it for fullwidth and manually-width images
+        // overwrite to use it for fullwidth and manually-width images
         imagecols.label = Breite des Bildes
         imagecols.removeItems = 3,4,5,6,7,8
         imagecols.altLabels.1 = volle Breite
@@ -72,6 +72,6 @@ TCEFORM {
 #
 #TCAdefaults.tt_content.frame_class = none
 
-# force "benutzerdefinierte Breite" as standard for images
+## force "benutzerdefinierte Breite" as standard for images
 # TCAdefaults.tt_content.imagecols = 2 //doch nicht...
 # TCAdefaults.tt_content.imageorient = 3

@@ -63,3 +63,34 @@
 //Modules (used to mark and modify markup from core and bootstrap)
 @import "TraumomentCustom/modules/hero-content";
 @import "TraumomentCustom/modules/textpic";
+@import "TraumomentCustom/modules/language-menu";
+
+div[data-module="language-menu"] {
+
+  display: block;
+  text-align: center;
+  padding: 10px 0 0 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 5px;
+
+      a {
+        font-size: 20px;
+      }
+
+      &:after {
+        content: "|";
+        padding: 0 0 0 10px;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+}

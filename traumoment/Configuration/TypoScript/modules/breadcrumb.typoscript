@@ -1,0 +1,14 @@
+lib.breadcrumb = HMENU
+
+lib.breadcrumb {
+
+    special = rootline
+    special.range = 1|-2
+
+    ## the breadcrumb from bootstrap package is used
+    ## template is here:
+    ## app/public/typo3conf/ext/bootstrap_package/Resources/Private/Partials/Page/Navigation/Breadcrumb.html
+    ##
+    ## and config is here
+    ## traumoment/Configuration/TypoScript/setup.typoscript, see "rootline"
+}

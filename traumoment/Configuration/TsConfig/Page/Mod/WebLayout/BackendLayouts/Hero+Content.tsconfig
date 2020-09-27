@@ -3,9 +3,6 @@ mod.web_layout.BackendLayouts {
         title = Hero+Content
         icon = EXT:traumoment/Resources/Public/Icons/BackendLayouts/hero+content.png
 
-
-
-
         config {
             backend_layout {
                 colCount = 2

@@ -17,14 +17,13 @@ lib.metanav {
 
         #CUR < .NO
         CUR = 1
-        #CUR.ATagParams = class="active"
+        CUR.ATagParams = class="current-item"
         CUR {
             wrapItemAndSub = <li class="active">|</li>
         }
 
         #ACT < .NO
         ACT = 1
-        #ACT.ATagParams = class="active"
         ACT {
             wrapItemAndSub = <li class="active">|</li>
         }

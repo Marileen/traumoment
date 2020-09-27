@@ -3,13 +3,18 @@
 #
 TCEMAIN {
 
+    #userid 3 = josi
     permissions.userid = 3
-    permissions.groupid = 1
+    permissions.groupid = 5
 
     permissions {
         user = show, edit, delete, new, editcontent
         group = show, edit, new, editcontent
         everybody = show
     }
+
+    table.pages.disablePrependAtCopy = 0
+    # Pages will *not* be hidden upon copy:
+    disableHideAtCopy = 1
 
 }
