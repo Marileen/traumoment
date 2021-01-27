@@ -13,8 +13,10 @@
 .gallery-item {
     padding-left: .5rem;      //removed Su. 24. May because of horizontal scrollbars in hero when using no frame
     padding-right: .5rem;
-    img,
+    width: 100%;
+    img, .image,
     picture {
+        width: 100%;
         max-width: 100%;
         height: auto;
     }

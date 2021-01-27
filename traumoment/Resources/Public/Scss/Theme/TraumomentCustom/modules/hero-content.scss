@@ -1,8 +1,24 @@
 div[data-module="hero-content"] {
+
+  position: relative;
+
   .gallery-row {
     margin: 0;
   }
   .gallery-item {
     padding:0;
+  }
+
+  header {
+    position:absolute;
+    bottom: 15px;
+    left: 30vw;
+
+    h1 {
+      background: rgba(255,255,255,0.4);
+      padding: 10px 15px 5px 15px;
+      border-radius: 2px;
+      color: #555;
+    }
   }
 }

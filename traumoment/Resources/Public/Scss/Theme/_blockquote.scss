@@ -3,23 +3,72 @@
 //
 blockquote {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 1.25rem 1.5rem;
-    border-left: 4px solid rgba(0, 0, 0, .125);
     margin-bottom: $spacer;
     font-size: 40px;
     color: $primary;
     font-family: 'Great Vibes';
-    text-align: justify;
+
     > *:last-child {
         margin-bottom: 0;
     }
-    footer {
-        display: block;
-        font-size: 80%;
-        color: $blockquote-small-color;
-        margin-top: -.5rem;
-        &:before {
-            content: "\2014 \00A0";
+
+    &:before {
+        content: "\e901";
+        font-family: 'icomoon';
+        color: #BEBFBF;
+        font-size: 50px;
+    }
+
+    &:after {
+        content: "\e900";
+        font-family: 'icomoon';
+        color: #BEBFBF;
+        font-size: 50px;
+        align-self: flex-end;
+    }
+
+    p {
+        display: inline-block;
+        max-width: 750px;
+        text-align: justify;
+        margin: 0 20px;
+
+        @include media-breakpoint-up('sm') {
+            max-width: 50%;
         }
     }
+
+    footer {
+        order: 4;
+        display: block;
+        font-size: 1.15rem;
+        //color: $blockquote-small-color;
+        color: $primary;
+        margin-top: -.5rem;
+        text-transform: uppercase;
+        font-family: $font-family-base;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        padding: 0;
+
+        &:before, &:after {
+            font-size: 40px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+
 }

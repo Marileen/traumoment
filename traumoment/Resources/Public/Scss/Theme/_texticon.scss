@@ -3,6 +3,19 @@
 // --------------------------------------------------
 .texticon {
     @include clearfix();
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .element-header {
+        color: #6c757d;
+    }
+
+    h1 {
+        font-size: 80px;
+        font-weight: 300;
+    }
 }
 .texticon-icon {
     font-size: 2em;
@@ -25,10 +38,10 @@
 }
 @include media-breakpoint-up(sm) {
     .texticon-size-large {
-        font-size: 3em;
+        font-size: 4em;
     }
     .texticon-size-awesome {
-        font-size: 4em;
+        font-size: 6em;
     }
 }
 @include media-breakpoint-up(sm) {
@@ -36,10 +49,10 @@
         font-size: 3em;
     }
     .texticon-size-large {
-        font-size: 4em;
+        font-size: 6em;
     }
     .texticon-size-awesome {
-        font-size: 5em;
+        font-size: 8em;
     }
 }
 .texticon-top .texticon-icon {

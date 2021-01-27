@@ -1,27 +1,10 @@
-.tm-border-right {
-  border-right:3px solid $secondary;
-}
-
-.color-hl {
-  color: $secondary;
-}
-
-.thumbnail {
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-}
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../../Fonts/traumoment-icomoon/fonts/icomoon.eot?lv0d7d');
-  src:  url('../../Fonts/traumoment-icomoon/fonts/icomoon.eot?lv0d7d#iefix') format('embedded-opentype'),
-  url('../../Fonts/traumoment-icomoon/fonts/icomoon.ttf?lv0d7d') format('truetype'),
-  url('../../Fonts/traumoment-icomoon/fonts/icomoon.woff?lv0d7d') format('woff'),
-  url('../../Fonts/traumoment-icomoon/fonts/icomoon.svg?lv0d7d#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?lv0d7d');
+  src:  url('fonts/icomoon.eot?lv0d7d#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?lv0d7d') format('truetype'),
+    url('fonts/icomoon.woff?lv0d7d') format('woff'),
+    url('fonts/icomoon.svg?lv0d7d#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

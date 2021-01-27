@@ -1,0 +1,22 @@
+div[data-module="contact"] {
+
+  background-color: #fee5d6;
+
+  .headline {
+
+    padding-top: 100px;
+
+    > div {
+      position: absolute;
+      top:0;
+      width: 100%;
+    }
+    h2, h3 {
+      text-transform: uppercase;
+      color: $secondary;
+      font-size: 55px;
+      text-align: center;
+    }
+  }
+
+}
