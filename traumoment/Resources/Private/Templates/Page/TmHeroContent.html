@@ -1,4 +1,4 @@
-<f:layout name="Default" />
+<f:layout name="Default"/>
 
 <f:section name="Hero">
     Hero Section (in Arbeit)
@@ -6,15 +6,32 @@
 
 <f:section name="HeroContent">
     <div data-module="hero-content">
-        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '10'}" />
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '10'}"/>
     </div>
 </f:section>
 
 <f:section name="Main">
 
     <div data-module="text-image-ordered">
-        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '50'}" />
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '50'}"/>
     </div>
 
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}"/>
+
+    <div data-module="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 headline">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '102'}"/>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '100'}"/>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '101'}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </f:section>

@@ -5,14 +5,14 @@ mod.web_layout.BackendLayouts {
 
         config {
             backend_layout {
-                colCount = 2
-                rowCount = 3
+                colCount = 3
+                rowCount = 6
                 rows {
                     1 {
                         columns {
                             1 {
                                 name = Sektion: Hero
-                                colspan = 2
+                                colspan = 3
                                 colPos = 10
                             }
                         }
@@ -21,7 +21,7 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Sektion: Text mit Trenner und Bild
-                                colspan = 2
+                                colspan = 3
                                 colPos = 50
                             }
                         }
@@ -30,8 +30,50 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Content
-                                colspan = 2
+                                colspan = 3
                                 colPos = 0
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Teaser Navigation - große Kreise 1
+                                colspan = 1
+                                colPos = 60
+                            }
+                            2 {
+                                name = Teaser Navigation - große Kreise 2
+                                colspan = 1
+                                colPos = 61
+                            }
+                            3 {
+                                name = Teaser Navigation - große Kreise 3
+                                colspan = 1
+                                colPos = 62
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = Contact Form Headline
+                                colspan = 2
+                                colPos = 102
+                            }
+                        }
+                    }
+                    6 {
+                        columns {
+                            1 {
+                                name = Contact Form left
+                                colspan = 1
+                                colPos = 100
+                            }
+                            2 {
+                                name = Contact Form right
+                                colspan = 1
+                                colPos = 101
                             }
                         }
                     }
