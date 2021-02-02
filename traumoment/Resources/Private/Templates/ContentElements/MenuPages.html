@@ -4,10 +4,6 @@
 <f:section name="Main">
     <f:if condition="{menu}">
         <f:render partial="Menu/SkipNavigation" arguments="{_all}" />
-
-        <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}" class="clickarea">
-        </a>
-
             <f:for each="{menu}" as="page">
                 <div class="t-inner">
                     <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">{page.title}</a>
