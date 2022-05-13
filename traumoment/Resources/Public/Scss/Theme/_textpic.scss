@@ -49,8 +49,15 @@
     }
 
     .textpic-right {
-        .textpic-text {
-            //margin-left: 10%;
+        picture {
+            border-left: 3px solid $secondary;
+            padding-left: 20px;
+        }
+    }
+    .textpic-left {
+        picture {
+            border-right: 3px solid $secondary;
+            padding-right: 20px;
         }
     }
 

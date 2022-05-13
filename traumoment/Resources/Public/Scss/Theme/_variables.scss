@@ -128,9 +128,9 @@ $frame-outer-spacing-scaling: () !default;
 $frame-outer-spacing-scaling: map-merge(
                 (
                         none: 0,
-                        extra-small: 1,
-                        small: 1.5,
-                        medium: 2,
+                        extra-small: -1,
+                        small: 1,
+                        medium: 1.5,
                         large: 2.5,
                         extra-large: 3
                 ),

@@ -117,11 +117,15 @@
 //
 .navbar-mainnavigation {
     .navbar-brand {
-        margin-right: $grid-gutter-width;
+        margin-right: 10px;
         @each $breakpoint in map-keys($navbar-heights) {
             @include media-breakpoint-up($breakpoint) {
                 height: map-get($navbar-heights, $breakpoint);
             }
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-right: $grid-gutter-width;
         }
     }
     .navbar-brand-image {

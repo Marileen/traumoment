@@ -18,41 +18,46 @@
 
     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}"/>
 
-    <div data-module="navigation-teaser">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="teaser-item">
-                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '60'}"/>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="teaser-item">
+    <f:comment>
+        Hier wird eine Variable namens content gesetzt, die auf den ersten Teaser Inhalt verweist.
+        Nur wenn der erste Teaser gefüllt ist, werden die Teaser überhaupt ausgegeben.
+        (Eigentlich müssten alle 3 abgefragt werden)
+    </f:comment>
+    {f:cObject(typoscriptObjectPath: 'lib.dynamicContent', data: {pageUid: '{data.uid}', colPos: '60'}) -> f:variable(name: 'content')}
 
-                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '61'}"/>
-                </div>
-                </div>
-                <div class="col-sm-4">
+    <f:if condition="{content}">
+        <div data-module="navigation-teaser">
+            <div class="container" >
+                <div class="row" style="justify-content: center;">
                     <div class="teaser-item">
-                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '62'}"/>
-                </div>
+                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '60'}"/>
+                    </div>
+                    <div class="teaser-item">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '61'}"/>
+                    </div>
+                    <div class="teaser-item">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '62'}"/>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </f:if>
 
-    <div data-module="contact">
+    <div data-module="contact" id="Kontakt">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-sm-center">
                 <div class="col-12 headline">
                     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '102'}"/>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-8">
                     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '100'}"/>
                 </div>
+                <!-- DISABLED FOR NOW - KÖSI WOLLTE LINKS UND RECHTS ZWEI FORMULARE
+                    ALSO HABE ICH ES SO GEBAUT, ABER ES IST NICHT SINNVOLL
                 <div class="col-12 col-sm-6">
                     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '101'}"/>
                 </div>
+                -->
             </div>
         </div>
     </div>

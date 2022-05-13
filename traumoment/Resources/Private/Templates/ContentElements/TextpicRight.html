@@ -6,18 +6,20 @@
     <f:variable name="imageConfig">{settings.responsiveimages.contentelements.textpic.right}</f:variable>
     <bk2k:data.imageVariants as="variants" variants="{variants}" multiplier="{imageConfig.multiplier}" gutters="{imageConfig.gutters}" corrections="{imageConfig.corrections}" />
     <div class="textpic textpic-right row justify-content-md-center" data-module="textpic">
-        <div class="textpic-item textpic-gallery col-md-5">
+        <f:if condition="{data.image}">
+            <div class="textpic-item textpic-gallery col-md-5">
 
-            <f:if condition="{data.header}">
-                <f:then>
-                    <h3 class="element-subheader" data-module="header-textpic">
-                        {data.header}
-                    </h3>
-                </f:then>
-            </f:if>
+                <f:if condition="{data.header}">
+                    <f:then>
+                        <h3 class="element-subheader" data-module="header-textpic">
+                            {data.header}
+                        </h3>
+                    </f:then>
+                </f:if>
 
-            <f:render partial="Media/Gallery" arguments="{_all}" />
-        </div>
+                <f:render partial="Media/Gallery" arguments="{_all}" />
+            </div>
+        </f:if>
         <div class="textpic-item textpic-text tm-border-right col-md-7">
             <f:render partial="Header/Textpic" arguments="{_all}" />
             <f:format.html>{data.bodytext}</f:format.html>

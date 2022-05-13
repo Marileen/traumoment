@@ -11,15 +11,15 @@ page {
     //to avoid loading screen and showing the bootstrap package logo
     preloader.enable = 0
     logo {
-        file = EXT:traumoment/Resources/Public/Images/TrauMoment.svg
-        fileInverted = EXT:traumoment/Resources/Public/Images/Traumoment.svg
+        file = fileadmin/user_upload/Traumoment-Bilder/logos/TrauMoment.svg
+        fileInverted = fileadmin/user_upload/Traumoment-Bilder/logos/TrauMoment.svg
         height = 350
         width = 350
         alt = Traumoment
         linktitle = Traumoment
     }
     favicon {
-        file = EXT:traumoment/Resources/Public/Icons/favicon.ico
+        file = fileadmin/user_upload/Traumoment-Bilder/logos/favicon.ico
     }
     fluidtemplate {
         layoutRootPath = EXT:traumoment/Resources/Private/Layouts/Page/

@@ -38,17 +38,17 @@ mod.web_layout.BackendLayouts {
                     4 {
                         columns {
                             1 {
-                                name = Teaser Navigation - große Kreise 1
+                                name = Teaser Navigation - großer Kreis 1
                                 colspan = 1
                                 colPos = 60
                             }
                             2 {
-                                name = Teaser Navigation - große Kreise 2
+                                name = Teaser Navigation - großer Kreis 2
                                 colspan = 1
                                 colPos = 61
                             }
                             3 {
-                                name = Teaser Navigation - große Kreise 3
+                                name = Teaser Navigation - großer Kreis 3
                                 colspan = 1
                                 colPos = 62
                             }

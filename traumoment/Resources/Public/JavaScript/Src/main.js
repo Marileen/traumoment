@@ -1,1 +1,1 @@
-console.log('WE LOVE TYPO3');
+console.log('This is trau-moment');

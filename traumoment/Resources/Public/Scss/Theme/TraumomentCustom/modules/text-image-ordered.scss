@@ -1,0 +1,13 @@
+div[data-module="text-image-ordered"] {
+  counter-reset: section-counter;
+
+  .frame-type-textpic {
+    counter-increment: section-counter;
+  }
+  .numbered-header-layout {
+    &:before {
+      content: counter(section-counter) " ";
+      margin-right: 20px;
+    }
+  }
+}

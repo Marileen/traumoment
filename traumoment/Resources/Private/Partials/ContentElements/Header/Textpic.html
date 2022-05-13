@@ -7,7 +7,8 @@
                 layout: data.header_layout,
                 class: '{settings.subheader.class} color-hl',
                 positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
-                default: settings.header.defaultHeaderType}" />
+                default: settings.header.defaultHeaderType
+                }"/>
             <f:render partial="Header/Date" arguments="{
                 date: data.date,
                 format: settings.header.date.format,

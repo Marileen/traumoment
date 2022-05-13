@@ -3,9 +3,9 @@
 //
 blockquote {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: center;
     padding: 1.25rem 1.5rem;
     margin-bottom: $spacer;
     font-size: 40px;
@@ -13,7 +13,8 @@ blockquote {
     font-family: 'Great Vibes';
 
     > *:last-child {
-        margin-bottom: 0;
+        //margin-bottom: 0;
+        margin-bottom: 45px;
     }
 
     &:before {
@@ -28,7 +29,7 @@ blockquote {
         font-family: 'icomoon';
         color: #BEBFBF;
         font-size: 50px;
-        align-self: flex-end;
+        //align-self: flex-end;
     }
 
     p {

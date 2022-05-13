@@ -8,17 +8,24 @@
     align-items: center;
     justify-content: center;
 
+    @include media-breakpoint-up(md) {
+        align-items: flex-start;
+    }
+
     .element-header {
         color: #6c757d;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 42px;
+        @include media-breakpoint-up(md) {
+            font-size: 80px;
+        }
         font-weight: 300;
     }
 }
 .texticon-icon {
-    font-size: 2em;
+    font-size: 4em;
     .texticon-inner-icon,
     .texticon-inner-icon svg,
     .texticon-inner-icon img {

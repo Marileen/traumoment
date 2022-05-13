@@ -37,7 +37,7 @@ page {
 
     ## 2 menu levels are default, and template Page/Navigation/Main.html does not support more than 2
     ## so i added some more in that template
-    10.dataProcessing.10.{
+    10.dataProcessing.10 {
         levels=4
     }
 
@@ -73,3 +73,103 @@ page {
 page.config.contentObjectExceptionHandler = 0
 
 #config.admPanel = 1
+
+
+lib.contentElement.settings.responsiveimages.variants {
+    default {
+        sizes {
+            1\.5x {
+                multiplier = 1.5
+            }
+
+            2x {
+                multiplier = 2
+            }
+        }
+    }
+    large {
+        sizes {
+            1\.5x {
+                multiplier = 1.5
+            }
+
+            2x {
+                multiplier = 2
+            }
+        }
+    }
+    medium {
+        sizes {
+            1\.5x {
+                multiplier = 1.5
+            }
+
+            2x {
+                multiplier = 2
+            }
+        }
+    }
+    small {
+        sizes {
+            1\.5x {
+                multiplier = 1.5
+            }
+
+            2x {
+                multiplier = 2
+            }
+        }
+    }
+    extrasmall {
+        sizes {
+            1\.5x {
+                multiplier = 1.5
+            }
+
+            2x {
+                multiplier = 2
+            }
+        }
+    }
+}
+
+lib.contentElement.settings.responsiveimages.contentelements.textpic {
+    left {
+        multiplier {
+            default = 1
+            xlarge = 1
+            large = 1
+            medium = 1
+        }
+    }
+    right {
+        multiplier {
+            default = 1
+            xlarge = 1
+            large = 1
+            medium = 1
+        }
+    }
+}
+
+plugin.tx_bootstrap_package {
+    _LOCAL_LANG {
+        default {
+            cookieconsent.common.header = We got Cookies!
+            cookieconsent.common.message = This website uses cookies to ensure you get the best experience on our website.
+            cookieconsent.common.dismiss = Got it!
+            cookieconsent.common.allow = Allow cookies
+            cookieconsent.common.deny = Decline
+            cookieconsent.common.link = Learn more
+        }
+        de {
+            cookieconsent.common.header = Wir haben Kekse!
+            cookieconsent.common.message = Diese Website verwendet Cookies für Grundfunktionen für eine optimale Nutzung der Seite.
+            # cookieconsent.common.message = Diese Website verwendet Cookies für Grundfunktionen (wie Seitennavigation) für eine optimale Nutzung der Seite.
+            cookieconsent.common.dismiss = Alles klar!
+            cookieconsent.common.allow = Cookies akzeptiren
+            cookieconsent.common.deny = Ablehen
+            cookieconsent.common.link = Mehr erfahren
+        }
+    }
+}

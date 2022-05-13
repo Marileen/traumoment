@@ -36,6 +36,10 @@ TCEFORM {
             label.de = Überschrift (wird bei Text & Bilder über dem TEXT angezeigt)
         }
 
+        header_layout {
+            addItems.123 = ->nummerieren
+        }
+
         // Bootstrap Package disabled the image dimensions
         // but i overwrite it to use it for svg images
         imageheight.disabled = 0
